@@ -24,7 +24,7 @@ if 'authenticated' not in st.session_state:
 # --- Authentication Layer ---
 # Retrieve the valid user key from Streamlit Cloud secrets
 # You MUST set 'VALID_USER_KEY' as a secret in Streamlit Cloud (next step)
-VALID_USER_KEY = st.secrets["VALID_USER_KEY"] # This will be set in Streamlit Cloud
+VALID_USER_KEY = st.secrets["uchennA4326"] # This will be set in Streamlit Cloud
 
 if not st.session_state.authenticated:
     st.sidebar.title("App Access")
@@ -50,7 +50,7 @@ st.write("Enter your preferences to search and download royalty-free videos from
 # --- API Key Retrieval from Streamlit Cloud Secrets ---
 # This key is stored securely on Streamlit Cloud and is NOT exposed to the user.
 try:
-    current_api_key = st.secrets["PIXABAY_API_KEY"]
+    current_api_key = st.secrets["24264058-740cd5f093abc58aab8f8ddb4"]
     st.sidebar.success("Pixabay API Key loaded!")
 except KeyError:
     st.sidebar.error("Pixabay API Key not found in Streamlit secrets. Please configure it.")
